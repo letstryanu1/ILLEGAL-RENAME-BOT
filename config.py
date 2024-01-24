@@ -26,19 +26,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "26195814")
+    API_HASH  = os.environ.get("API_HASH", "940b54a3fafc866178cf9de98393e48c")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6637359940:AAEWiOBygP2JEkgxR4TfIZZOzV-Qhci0bJs") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")    
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://anwars:Anwar3453>@cluster0.2lbvq20.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/eb80582fa42f9bd412085.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1087141176').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "Unlimited_Movie_Zone") 
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '982227547').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "Netflix_Xseriesbot") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
